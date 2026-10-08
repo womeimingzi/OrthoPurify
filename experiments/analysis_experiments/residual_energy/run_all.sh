@@ -1,5 +1,5 @@
 #!/bin/bash
-# exp11: residual energy and weight-similarity analyses.
+# exp11: residual energy analysis.
 # CPU-only; run from anywhere inside OrthoPurify.
 
 set -euo pipefail
@@ -7,4 +7,3 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 
 bash "$SCRIPT_DIR/run_residual.sh"
-bash "$SCRIPT_DIR/run_weight_sim.sh"
