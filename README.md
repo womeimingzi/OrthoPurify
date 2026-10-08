@@ -2,6 +2,8 @@
 
 Official implementation of **Purifying Backdoored Large Vision-Language Models by Removing Hijacked Directions**.
 
+[![arXiv](https://img.shields.io/badge/arXiv-2610.09941-b31b1b.svg)](https://arxiv.org/abs/2610.09941)
+
 Pseudo-Benign Orthogonal Projection Purification for VLM Backdoor Defense.
 
 Identifies hijacked weight-update directions in adapter modules via SVD principal angle analysis, then removes them by one-step orthogonal projection. Requires only 64 clean samples and no knowledge of the attack type.
@@ -196,6 +198,19 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 \
 ```
 
 Metrics: ASR (attack success rate), CIDEr (captioning quality), V-score (VQA accuracy).
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{yang2026purifying,
+  title   = {Purifying Backdoored Large Vision-Language Models by Removing Hijacked Directions},
+  author  = {Yang, Bojun and Zhou, Haochen and Zhang, Zhifang and Wang, Haobo and Li, Songze and Feng, Lei},
+  journal = {arXiv preprint arXiv:2610.09941},
+  year    = {2026}
+}
+```
 
 ## License
 
